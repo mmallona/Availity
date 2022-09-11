@@ -1,0 +1,1 @@
+SELECT * FROM AvaCustomer WHERE [last] LIKE 'S%' order by [last],[first]
