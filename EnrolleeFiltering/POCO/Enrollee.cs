@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EnrolleeFiltering.POCO
 {
-    class Enrollee
+    public class Enrollee
     {
         public string userId { get; set; }
         public string Name { get; set; }

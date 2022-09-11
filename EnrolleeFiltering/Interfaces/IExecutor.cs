@@ -4,7 +4,7 @@ using System.Text;
 
 namespace EnrolleeFiltering.Interfaces
 {
-    interface IExecutor
+    public interface IExecutor
     {
         void Execute();
     }

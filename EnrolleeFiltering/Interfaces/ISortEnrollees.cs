@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EnrolleeFiltering.BL
 {
-    interface ISortEnrollees
+    public interface ISortEnrollees
     {
         IList<Enrollee> enrolleeList();
     }

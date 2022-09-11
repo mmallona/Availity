@@ -8,7 +8,7 @@ using System.Text;
 
 namespace EnrolleeFiltering.BL
 {
-    class ClientDriver : IExecutor
+    public class ClientDriver : IExecutor
     {
         public void Execute()
         {
