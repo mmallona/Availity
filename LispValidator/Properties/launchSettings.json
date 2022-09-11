@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "LispValidator": {
+      "commandName": "Project",
+      "commandLineArgs": "(expression(exp) )( )(x>3)( ?4==g)"
+    }
+  }
+}
