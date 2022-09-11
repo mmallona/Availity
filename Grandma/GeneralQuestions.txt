@@ -1,0 +1,18 @@
+1. Tell me about your proudest professional achievement. It can also be a personal or school project.
+
+	My most proud professional acchievement is been to continously learn coding in different languages, starting with Java a long time ago.  Solving problems and
+	automating taks thorough code is something that everyday brings me joy and pride.
+
+2. Tell me about something you have read recently that you would recommend and why. (Can be a Github
+Repo, Article, Blog, Book, etc)
+
+	I read that Microsoft is resucitaing the Remote Method Invocation under a different name that scapes me at the moment.  That avenue to do communications between C# apps was something else.
+	
+
+3. How would you explain to your grandmother what Availity does?
+
+	Grandma when you go to the doctor you in most cases will your insurance to pay for the doctor's visit.  At the doctor's office, the check your insurance and 
+	for that they use software.  Software is that funny bunch of squares and boxes that show on the computer screen and that does something in particular.
+	
+	Availity makes software so that your doctor and insurance company can communicate your visits  faster and more efficiently with your doctors, but also you 
+	you may check your visits and claims too.
