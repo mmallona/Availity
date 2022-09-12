@@ -6,7 +6,7 @@ using System.Text;
 
 namespace EnrolleeFiltering.BL
 {
-    class FileReader : IFileReader
+    public class FileReader : IFileReader
     {
         public string GetFileContent(string path)
         {

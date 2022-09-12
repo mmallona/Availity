@@ -2,6 +2,7 @@
 using EnrolleeFiltering.POCO;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,16 @@ namespace EnrolleeFiltering.BL
     {
         public void Execute()
         {
+            string path  = ConfigurationManager.AppSettings["DataFile"];
+            string pathFiltered = ConfigurationManager.AppSettings["Filtered"];
             ISortEnrollees sorting = new EnrolleeSort();
-            IList<Enrollee> list = sorting.enrolleeList().OrderBy(n => n.Provider).ToList();
-            string path = @"../../../Filtered/";
             string tempProvider = string.Empty;
+            string content = new FileReader().GetFileContent(path);
+
+            IList<Enrollee> list = sorting.enrolleeList(content).OrderBy(n => n.Provider).ToList();
 
             // pre empty the folder
-            PreDeleteFiles(path);
+            PreDeleteFiles(pathFiltered);
 
             foreach (Enrollee en in list)
             {
@@ -26,9 +30,9 @@ namespace EnrolleeFiltering.BL
                 {
                     string fileName = en.Provider + ".txt";
                     string name = en.Name;
-                    string content = en.userId + "," + name + "," + en.Provider + "," + en.Version + Environment.NewLine;
+                    string line = en.userId + "," + name + "," + en.Provider + "," + en.Version + Environment.NewLine;
 
-                    File.AppendAllText(path + fileName, content);
+                    File.AppendAllText(pathFiltered + fileName, line);
                 }
                 catch(Exception ex)
                 {

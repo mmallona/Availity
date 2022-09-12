@@ -8,6 +8,6 @@ namespace EnrolleeFiltering.BL
 {
     public interface ISortEnrollees
     {
-        IList<Enrollee> enrolleeList();
+        IList<Enrollee> enrolleeList(string content);
     }
 }

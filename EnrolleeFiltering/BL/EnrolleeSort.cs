@@ -9,13 +9,12 @@ namespace EnrolleeFiltering.BL
     public class EnrolleeSort : ISortEnrollees
     {
         
-        public IList<Enrollee> enrolleeList()
+        public IList<Enrollee> enrolleeList(string content)
         {
-            string path = @"..\..\..\CSV\Enrollees.txt";
+            
             IList<Enrollee> list = null;
             try
-            {
-                string content = new FileReader().GetFileContent(path);
+            {                
                 IList<Enrollee> enrolleeList = new List<Enrollee>();
                 string[] lines = content.Split('\r');
 
