@@ -43,14 +43,13 @@ namespace AvailityTests
         public void Driver()
         {
             //set up
-            string path = @"../../../Filtered/";
             IExecutor driver = new ClientDriver();
 
             //arrange
             driver.Execute();
 
             //test
-            string[] filePaths = Directory.GetFiles(path);
+            string[] filePaths = Directory.GetFiles(pathFiltered);
 
             Assert.IsTrue(filePaths.Length > 0);
         }
